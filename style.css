@@ -30,6 +30,7 @@ p {
     font-family:  Roboto Regular;
     font-size: 20px;
     color: #4f4d53;
+    line-height: 1.6;
 }
 
 /* NavBar */
@@ -44,7 +45,7 @@ nav {
 }
 
 .title {
-    margin-left: 100px;
+    margin-left: 1rem;
 }
 
 /* Main */
@@ -57,7 +58,7 @@ nav {
     align-items: center;
 }
 .description-container {
-    height: 600px;
+    padding: 2rem 0;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -65,8 +66,19 @@ nav {
     align-items: center;
 }
 
+.team-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.team-container > img {
+  margin: 1rem 0;
+}
+
 .description-container_text {
-    width: 50%;
+    width: 80%;
     display: block;
     margin: auto;
 }
@@ -75,10 +87,18 @@ nav {
 
 footer {
     border-top: 12px solid #e8be02;
-    height: 320px;
     width: 100%;
     background-color: #4f3d53;
     display: flex;
     justify-content: space-around;
-    padding: 20px 0;
+    padding: 3rem 0;
+    flex-wrap: wrap;
+}
+
+footer > section {
+  margin: 1rem;
+}
+
+footer > section > p {
+  color: white;
 }
